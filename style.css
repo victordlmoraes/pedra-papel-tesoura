@@ -1,0 +1,248 @@
+/* IMPORTAÇÃO DA FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+/* DEFINIÇÃO DE CORES */
+:root {
+    /* COR DOS BACKGROUNDS */
+    --game-bg: rgb(28, 26, 34);
+    --scoreboard-bg: rgb(17, 17, 20);
+    --header-bg: rgba(255, 255, 255, 0.11);
+    
+    --button-bg: rgb(17, 17, 20);
+    --button-bg-hover: rgba(255, 255, 255, 0.116);
+    
+    --reset-button-bg: rgb(17, 17, 20);
+    --reset-button-bg-hover: rgba(255, 255, 255, 0.192);
+
+    /* COR DE IDENTIFICAÇÃO DO USUÁRIO, COMPUTADOR E EMPATE */
+    --user-tag-bg: green;
+    --computer-tag-bg:crimson;
+    --draw-result-color: rgb(182, 175, 175);
+
+    /* COR DOS TEXTOS */
+    --game-text-color: white;
+    --header-text-color: white;
+    --button-text-color: white;
+    --reset-button-text-color: white;
+
+    /* COR DAS BORDAS */
+    --scoreboard-border-color: white;
+    --button-border-color: white;
+    --reset-button-border-color: white;
+
+    /* COR DOS BOX-SHADOW */
+    --box-shadow-color: rgba(0, 0, 0, 0.425);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--game-bg);
+    color: var(--game-text-color);
+    font-family: 'Pangolin', cursive;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 25px 2%;
+    font-size: 25px;
+}
+
+/* ESTILO DO PLACAR */
+.score-board {
+    position: relative;
+    width: 200px;
+    margin: 12px auto;
+    text-align: center;
+    font-size: 55px;
+    background-color: var(--scoreboard-bg);
+    border: 4px solid var(--scoreboard-border-color);
+    border-radius: 5px;
+}
+
+.score-board p {
+    font-size: 20px;
+}
+
+.score-board #user-tag {
+    position: absolute;
+    padding: 0 3px;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    background-color: var(--user-tag-bg);
+}
+
+.score-board #computer-tag {
+    position: absolute;
+    padding: 0 3px;
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%);
+    background-color: var(--computer-tag-bg);
+}
+
+/* ESTILO DA MENSAGEM DE RESULTADO */
+.result {
+    margin: 35px auto;
+}
+
+.result h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+/* ESTILO DOS BOTÕES PEDRA, PAPEL E TESOURA */
+
+.game-moves {
+    text-align: center;
+}
+
+.game-moves button {
+    font-family: 'Pangolin', cursive;
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    background-color: var(--button-bg);
+    border: 4px solid var(--button-border-color);
+    border-radius: 8px;
+    color: var(--button-text-color);
+    font-size: 28px;
+    box-shadow: -10px 10px 1px var(--box-shadow-color);
+    outline: none;
+    transition: 0.3s;
+}
+
+.game-moves button:nth-of-type(2) {
+    box-shadow: 0 10px 1px var(--box-shadow-color);
+}
+
+.game-moves button:nth-of-type(3) {
+    box-shadow: 10px 10px 1px var(--box-shadow-color);
+}
+
+.game-moves button:hover {
+    cursor: pointer;
+    background-color: var(--button-bg-hover);
+}
+
+.game-moves button:active {
+    box-shadow: none;
+    transform: translate(-2px, 8px);
+}
+
+.game-moves button:nth-of-type(2):active {
+    box-shadow: none;
+    transform: translateY(8px);
+}
+
+.game-moves button:nth-of-type(3):active {
+    box-shadow: none;
+    transform: translate(2px, 8px);
+}
+
+.game-moves button i {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+
+/* ESTILO DO BOTÃO DE RESET DO PLACAR */
+.reset-block {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#reset-button {
+    font-family: 'Pangolin', cursive;
+    padding: 20px 10px;
+    font-size: 30px;
+    color: var(--reset-button-border-color);
+    border: 4px solid var(--reset-button-border-color);
+    border-radius: 8px;
+    background-color: var(--reset-button-bg);
+    box-shadow: 0 10px 1px var(--box-shadow-color);
+    outline: none;
+}
+
+#reset-button:hover {
+    cursor: pointer;
+    background-color: var(--reset-button-bg-hover);
+}
+
+#reset-button:active {
+    box-shadow: none;
+    transform: translateY(8px);
+}
+
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 580px) {
+    header {
+        font-size: 20px;
+    }
+
+    .game-moves button {
+        width: 120px;
+        height: 120px;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .game-moves button i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header {
+        font-size: 17px;
+    }
+
+    .game-moves button {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin:10px auto;
+        box-shadow: 0 10px 1px var(--box-shadow-color) !important;
+    }
+
+    .game-moves button:active {
+        box-shadow: none;
+        transform: translateY(8px) !important;
+    }
+
+    .game-moves button i {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    header {
+        font-size: 15px;
+    }
+
+    .score-board {
+        width: 170px;
+        margin: 10px auto;
+        font-size: 48px;
+        border: 4px solid var(--scoreboard-border-color);
+        border-radius: 5px;
+    }
+
+    .result h2 {
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
