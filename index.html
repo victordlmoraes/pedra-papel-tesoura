@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d296aa0d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Pedra - Papel - Tesoura</h1>
+    </header>
+
+    <div class="score-board">
+        <p id="user-tag">você</p>
+        <p id="computer-tag">comp.</p>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <h2 id="result-text">Escolha qual será o seu movimento:</h2>
+    </div>
+
+    <div class="game-moves">
+        <button id="rock-button">
+            <i class="far fa-hand-rock"></i>
+            <p>Pedra</p>
+        </button>
+
+        <button id="paper-button">
+            <i class="far fa-hand-paper"></i>
+            <p>Papel</p>
+        </button>
+
+        <button id="scissors-button">
+            <i class="far fa-hand-scissors"></i>
+            <p>Tesoura</p>
+        </button>
+    </div>
+
+    <div class="reset-block">
+        <button onclick="resetButton()" id="reset-button">Resetar o Placar</button>
+    </div>
+
+<script src="game.js"></script>
+</body>
+</html>
