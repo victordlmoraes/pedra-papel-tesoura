@@ -192,6 +192,14 @@ header {
         font-size: 20px;
     }
 
+    .result {
+        padding: 0 2%;
+    }
+
+    .result h2 {
+        font-size: 20px;
+    }
+
     .game-moves button {
         width: 120px;
         height: 120px;
@@ -213,6 +221,10 @@ header {
 @media screen and (max-width: 450px) {
     header {
         font-size: 17px;
+    }
+
+    .result h2 {
+        font-size: 18px;
     }
 
     .game-moves {
@@ -243,8 +255,7 @@ header {
     }
 
     .result h2 {
-        font-size: 22px;
-        font-weight: normal;
+        font-size: 16px;
     }
 
     .game-moves button {
