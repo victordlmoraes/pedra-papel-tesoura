@@ -24,6 +24,8 @@ No campo de resultado, localizado logo abaixo do placar, será exibida uma mensa
 
 Também é disponibilizado ao usuário a opção de zerar o placar do jogo, caso, por exemplo, outra pessoa queira iniciar o jogo. Basta apenas clicar no botão *"Resetar o Placar"*. Uma mensagem de alerta irá aparecer, perguntando se o usuário de fato deseja ou não resetar o seu jogo.
 
+[:top: Voltar ao Topo](#ancora)
+
 <a id="ancora2"></a>
 ## :camera_flash: Screenshots
 
