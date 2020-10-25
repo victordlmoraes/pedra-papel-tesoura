@@ -258,6 +258,14 @@ footer a {
         font-size: 17px;
     }
 
+    .score-board #user-tag {
+        left: -43px;
+    }
+    
+    .score-board #computer-tag {
+        right: -55px;
+    }
+
     .result h2 {
         font-size: 18px;
     }
