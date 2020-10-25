@@ -103,6 +103,7 @@ header {
 
 .game-moves {
     text-align: center;
+    padding: 0 2%;
 }
 
 .game-moves button {
@@ -156,7 +157,7 @@ header {
 
 /* ESTILO DO BOTÃO DE RESET DO PLACAR */
 .reset-block {
-    margin: 50px 0;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -186,7 +187,7 @@ header {
 
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 610px) {
     header {
         font-size: 20px;
     }
@@ -202,19 +203,25 @@ header {
         font-size: 50px;
         margin-bottom: 10px;
     }
+
+    .reset-block {
+        margin-top: 35px;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     header {
         font-size: 17px;
     }
 
+    .game-moves {
+        padding: 0 2%;
+    }
+
     .game-moves button {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin:10px auto;
-        box-shadow: 0 10px 1px var(--box-shadow-color) !important;
+        width: 100px;
+        height: 100px;
     }
 
     .game-moves button:active {
@@ -228,21 +235,53 @@ header {
     }
 }
 
-@media screen and (max-width: 250px) {
-    header {
-        font-size: 15px;
-    }
-
+@media screen and (max-width: 400px) {
     .score-board {
         width: 170px;
         margin: 10px auto;
         font-size: 48px;
-        border: 4px solid var(--scoreboard-border-color);
-        border-radius: 5px;
     }
 
     .result h2 {
         font-size: 22px;
         font-weight: normal;
+    }
+
+    .game-moves button {
+        width: 90px;
+        height: 90px;
+        margin: 0 5px;
+        font-size: 15px;
+    }
+
+    .game-moves button i {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }   
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        font-size: 15px;
+    }
+
+    .game-moves button {
+        width: 70px;
+        height: 70px;
+        box-shadow: -6px 6px 1px var(--box-shadow-color);
+    }
+
+    .game-moves button:nth-of-type(2) {
+        box-shadow: 0 6px 1px var(--box-shadow-color);
+    }
+    
+    .game-moves button:nth-of-type(3) {
+        box-shadow: 6px 6px 1px var(--box-shadow-color);
+    }
+
+    #reset-button {
+        padding: 10px 10px;
+        font-size: 20px;
+        box-shadow: 0 6px 1px var(--box-shadow-color);
     }
 }
