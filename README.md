@@ -1,6 +1,6 @@
 # Pedra, Papel e Tesoura
 
-Simples jogo de Pedra, Papel e Tesoura, utilizando HTML5, CSS3 e Javascript puro. Acesse esse link caso queira visualizar o projeto e testá-lo: https://victordlmoraes.github.io/pedra-papel-tesoura/
+Simples jogo de Pedra, Papel e Tesoura, utilizando HTML5, CSS3 e Javascript puro. Acesse esse link caso queira visualizar o projeto e testá-lo: <a href="https://victordlmoraes.github.io/pedra-papel-tesoura/" target="_blank">Pedra, Papel e Tesoura</a>
 
 <a name="ancora"></a>
 ## Guia
